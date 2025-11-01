@@ -13,9 +13,9 @@ on:
 
 env:
   # Hostname of your registry
-  REGISTRY: docker.io
+  REGISTRY: ghcr.io
   # Image repository, without hostname and tag
-  IMAGE_NAME: alpine/git
+  IMAGE_NAME: mattn/alpine-git-curl
   SHA: ${{ github.event.pull_request.head.sha || github.event.after }}
 
 jobs:
